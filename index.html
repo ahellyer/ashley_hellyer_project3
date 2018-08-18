@@ -1,12 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Document</title>
-</head>
+</head> 
 <body>
+    <header>
+       
+        <h1>Pocket Pep Talk<span class="header-period">.</span></h1>
+       
+            <!-- <img class="sun-rays" src="styles/assets/sunRays.svg" alt=""> -->
+            
+
+        
+        
+        <form class="user-name" action="">
+            <fieldset class="user-info">
+                <label for="name"><h2>Need some pep? Enter your name:</h2></label>
+                <input type="text" name="" id="name" placeholder="">
+                <div class="button-container">
+                    <button type="submit" class="user-name-submit" name="" id="" value="">
+                        <i class="fas fa-arrow-down"></i>
+                        <img class="sun-icon" src="styles/assets/sunRaysOutline.png" alt="">
+                    </button>
+                   
+                </div>
+            </fieldset>
+        </form>
+    </header>
     
+    <form action="" class="user-answers hide">
+        <h2 class="why-pep-talk"></h2>
+        
+        <fieldset class="user-reason">
+
+            
+            
+            <input type="radio" name="reason" id="confidence" value="imposter" data-confidence>
+            <label for="confidence"><p>I have imposter syndrome</p></label>
+
+            <input type="radio" name="reason" id="stupid" value="stupid" data-stupid>
+            <label for="stupid"><p>I'm feeling stupid</p></label>
+
+            <input type="radio" name="reason" id="comparing" value="comparing" data-comparing>
+            <label for="comparing"><p>I'm comparing myself too much to others</p></label>
+
+            <input type="radio" name="reason" id="mistake" value="mistake" data-mistake>
+            <label for="mistake"><p>I made a mistake</p></label>
+
+            <input type="radio" name="reason" id="nervous" value="nervous" data-nervous>
+            <label for="nervous"><p>I'm nervous about something</p></label>
+
+            <button></button>
+            
+        </fieldset>
+
+        <h2 id="style-question" class='style-question'>Got it! Now what style of pep talk do you need?</h2>
+        <fieldset class="user-style">
+            
+
+            <input type="radio" name="style" id="tough-love" value="toughLove" data-toughLove>
+            <label for="tough-love">Tough Love</label>
+            
+            <input type="radio" name="style" id="try-your-best" value="tryYourBest" data-tryYourBest>
+            <label for="try-your-best">Kandace O'Brien school of "Try Your Best"</label>
+            
+            <input type="radio" name="style" id="oprah" value="oprah" data-oprah>
+            <label for="oprah">Oprah</label>
+            
+        </fieldset>
+        <input class="get-pep-talk" type="submit" name="" id="submit" value="pep talk me!">
+    </form>
+    
+    <div class="results hide">
+        <div class="gif-container">
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="script.js"></script>
+
+
 </body>
 </html>
+
+
+
+<!-- <div>Icons made by
+    <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from
+    <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
+    <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+        target="_blank">CC 3.0 BY</a>
+</div> -->
+
+
+
+<!-- icons:
+
+<text x="0" y="115" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by BK</text>
+<text x="0" y="120" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text> -->
