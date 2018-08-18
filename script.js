@@ -279,26 +279,40 @@ pepApp.getTalk = () => {
     // listen for submit of form
     // $('.user-name').on('submit', function (e) {
     //     e.preventDefault();
-    $('.user-name-submit').on('click', function (e) {
+    $('.user-name-submit').on('click submit', function (e) {
         e.preventDefault();
+        console.log('name saved');
        
         //save user info:
         pepApp.userName = $('#name').val();
         $('.why-pep-talk').html(`Why do you need a pep talk ${pepApp.userName}<span class="accent-color">?</span>`)
-        $('.user-answers').toggleClass('hide show');
+        $('.user-reason-form').toggleClass('hide show');
         $('html, body').animate({
-            scrollTop: $(".user-answers").offset().top
+            scrollTop: $(".user-reason-form").offset().top
         }, 2000);
         return false;
     });
-    //listen for submit of pep talk style
-    $('.user-answers').on('submit', function (e) {
-        e.preventDefault();
 
+    //listen for submit of pep talk style
+    $('.user-reason-submit').on('click', function (e) {
+        e.preventDefault();
+        //save reason
         pepApp.userReason = $('input[name=reason]:checked').val();
+        //toggle class to hide
+        $('.user-reason-form').toggleClass("show hide");
+        //toggle next question to show
+        $('.user-style-form').toggleClass('hide show')
+        //error handling for wrong answer?
+
+    });
+
+    $('.user-style-submit').on('click', function (e) {
+        e.preventDefault();
+        console.log('user style submitted');
+        //save user style
         pepApp.userStyle = $('input[name=style]:checked').val();
         
-        //array of choices
+        //generate array of choices
         const allOptions = pepApp.pepTalks[pepApp.userStyle][pepApp.userReason];
         //make copy of all options to send to randomize splice function
         let copyAllOptions = allOptions.slice();
@@ -313,17 +327,20 @@ pepApp.getTalk = () => {
                         <div class='pep-paragraph'>
                             <p>${introSentence}</p>
                             <p>${finalOptions[0]} ${finalOptions[1]}  ${finalOptions[2]}</p>
+                            <h3 class='new-choice' href = "#style-question" > I need more!</h3>
                         </div>`
 
-        // $('.results').append(pepApp.firstSentence[pepApp.userStyle][pepApp.userReason](pepApp.userName));
-        // $('.results').append(finalOptions[0] + finalOptions[1] + finalOptions[2]);
-        $('.results').append(pepParagraph);
-        
         const finalVideo = `<img ${pepApp.lastSentence[pepApp.userStyle].gif}>`
 
-        const button = `<a class='new-choice' href="#style-question">I need more!</a>`
-        $('.gif-container').append(finalVideo);
-        $('.results').append(button);
+        
+
+        $('.user-style-form').toggleClass('show hide')
+        // $('.results').toggleClass('hide show');
+        $('.results').append(pepParagraph);
+        
+        
+        // $('.gif-container').append(finalVideo);
+        // $('.results').append(button);
         $('.results').toggleClass("hide show");
 
     });
@@ -333,6 +350,8 @@ pepApp.getTalk = () => {
         $('.gif-container, .pep-paragraph, .new-choice').empty();
         console.log('click worked');
         $('.style-question').html('Reee-do! What style do you want instead?');
+        $('.results').toggleClass('show hide')
+        $('.user-style-form').toggleClass('hide show')
 
     });
 
@@ -342,7 +361,6 @@ pepApp.getTalk = () => {
 pepApp.random = function (array) {
     return Math.floor(Math.random() * (array.length - 2));
 };
-
 
 $(function () {
     

@@ -247,7 +247,7 @@ h2 {
   -ms-flex-direction: column;
   flex-direction: column; }
 
-.user-info button[type="submit"] {
+.user-submit {
   background-color: transparent;
   z-index: 10;
   border: none;
@@ -255,7 +255,7 @@ h2 {
   color: #FFEE93;
   width: 100%; }
 
-.user-reason {
+.input-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,12 +270,18 @@ h2 {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: center; }
+
+.user-reason {
   border: none;
+  background: #FAFAFA;
+  height: 100vh; }
+
+.user-style-form {
+  height: 100vh;
   background: #FAFAFA; }
 
 .user-style {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,7 +301,8 @@ h2 {
 
 .results {
   color: black;
-  margin: 20px; }
+  margin: 20px;
+  height: 100vh; }
 
 a {
   font-size: 50px;
@@ -370,7 +377,8 @@ input[type="radio"]:checked + label {
   width: 70%;
   margin: 0 auto;
   border: #A0CED9 4px solid;
-  border-radius: 5%; }
+  border-radius: 5%;
+  margin: 20px; }
 
 .get-pep-talk {
   display: block;
@@ -394,7 +402,8 @@ input[type="radio"]:checked + label {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  background: #FFEE93; }
 
 .pep-paragraph {
   width: 60%;

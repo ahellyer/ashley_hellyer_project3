@@ -49,13 +49,6 @@ h1 {
 }
 
 
-
-// .title-container {
-//     position: relative;
-// }
-
-
-
 h2 {
     font-family: 'Dosis', sans-serif;
     color: black;
@@ -85,8 +78,6 @@ h2 {
     align-items: stretch;
     margin-top: 60px;
 
-    // align-self: flex-start;
-
 }
 
 .sun-icon {
@@ -112,7 +103,7 @@ h2 {
 
 }
 
-.user-info button[type="submit"] {
+.user-submit {
     background-color: transparent;
     z-index: 10;
     border: none;
@@ -121,8 +112,27 @@ h2 {
     width: 100%;
 }
 
+.input-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .user-reason {
-    // background: lightblue;
+    border: none;
+    background: #FAFAFA;
+    height: 100vh;
+}
+
+.user-style-form {
+    height: 100vh;
+    background: #FAFAFA;
+}
+
+.user-style {
+    // background: peachpuff;
     // height: 100vh;
     display: flex;
     flex-direction: row;
@@ -130,23 +140,14 @@ h2 {
     justify-content: center;
     align-items: center;
     border: none;
-    background: #FAFAFA;
 }
 
-.user-style {
-    // background: peachpuff;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    border: none;
-}
+
 
 .results {
     color: black;
     margin: 20px;
+    height: 100vh;
 }
 
 a {
@@ -159,8 +160,6 @@ a {
     padding: 40px;
 
 }
-
-
 
 input[type="radio"]{
   display: none;
@@ -219,6 +218,7 @@ input[type="radio"]:checked + label{
     margin: 0 auto;
     border: $primary 4px solid;
     border-radius: 5%;
+    margin: 20px;
    
 }
 
@@ -236,6 +236,7 @@ input[type="radio"]:checked + label{
     text-align: center;
     flex-wrap: wrap;
     flex-direction: column;
+    background: $secondary;
 }
 
 .pep-paragraph {

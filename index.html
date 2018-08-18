@@ -26,7 +26,7 @@
                 <label for="name"><h2>Need some pep? Enter your name:</h2></label>
                 <input type="text" name="" id="name" placeholder="">
                 <div class="button-container">
-                    <button type="submit" class="user-name-submit" name="" id="" value="">
+                    <button type="text" class="user-submit user-name-submit" name="" id="" value="">
                         <i class="fas fa-arrow-down"></i>
                         <img class="sun-icon" src="styles/assets/sunRaysOutline.png" alt="">
                     </button>
@@ -36,54 +36,72 @@
         </form>
     </header>
     
-    <form action="" class="user-answers hide">
+    <form action="" class="user-reason-form hide">
         <h2 class="why-pep-talk"></h2>
         
         <fieldset class="user-reason">
+            <div class="input-container">
+                <input type="radio" name="reason" id="confidence" value="imposter" data-confidence>
+                <label for="confidence"><p>I have imposter syndrome</p></label>
 
-            
-            
-            <input type="radio" name="reason" id="confidence" value="imposter" data-confidence>
-            <label for="confidence"><p>I have imposter syndrome</p></label>
+                <input type="radio" name="reason" id="stupid" value="stupid" data-stupid>
+                <label for="stupid"><p>I'm feeling stupid</p></label>
 
-            <input type="radio" name="reason" id="stupid" value="stupid" data-stupid>
-            <label for="stupid"><p>I'm feeling stupid</p></label>
+                <input type="radio" name="reason" id="comparing" value="comparing" data-comparing>
+                <label for="comparing"><p>I'm comparing myself too much to others</p></label>
 
-            <input type="radio" name="reason" id="comparing" value="comparing" data-comparing>
-            <label for="comparing"><p>I'm comparing myself too much to others</p></label>
+                <input type="radio" name="reason" id="mistake" value="mistake" data-mistake>
+                <label for="mistake"><p>I made a mistake</p></label>
 
-            <input type="radio" name="reason" id="mistake" value="mistake" data-mistake>
-            <label for="mistake"><p>I made a mistake</p></label>
+                <input type="radio" name="reason" id="nervous" value="nervous" data-nervous>
+                <label for="nervous"><p>I'm nervous about something</p></label>
+            </div>
 
-            <input type="radio" name="reason" id="nervous" value="nervous" data-nervous>
-            <label for="nervous"><p>I'm nervous about something</p></label>
-
-            <button></button>
+            <div class="button-container">
+                <button type="text" class="user-submit user-reason-submit" name="" id="" value="">
+                    <i class="fas fa-arrow-down"></i>
+                    <img class="sun-icon" src="styles/assets/sunRaysOutline.png" alt="">
+                </button>
+            </div>
             
         </fieldset>
+    </form>
+
+    <form action="" class="user-style-form hide">
 
         <h2 id="style-question" class='style-question'>Got it! Now what style of pep talk do you need?</h2>
         <fieldset class="user-style">
-            
 
-            <input type="radio" name="style" id="tough-love" value="toughLove" data-toughLove>
-            <label for="tough-love">Tough Love</label>
-            
-            <input type="radio" name="style" id="try-your-best" value="tryYourBest" data-tryYourBest>
-            <label for="try-your-best">Kandace O'Brien school of "Try Your Best"</label>
-            
-            <input type="radio" name="style" id="oprah" value="oprah" data-oprah>
-            <label for="oprah">Oprah</label>
+                <div class="input-container">
+                <input type="radio" name="style" id="tough-love" value="toughLove" data-toughLove>
+                <label for="tough-love">Tough Love</label>
+                
+                <input type="radio" name="style" id="try-your-best" value="tryYourBest" data-tryYourBest>
+                <label for="try-your-best">Kandace O'Brien school of "Try Your Best"</label>
+                
+                <input type="radio" name="style" id="oprah" value="oprah" data-oprah>
+                <label for="oprah">Oprah</label>
+
+            </div>
+
+            <div class="button-container">
+                <button type="text" class="user-submit user-style-submit" name="" id="" value="">
+                    <i class="fas fa-arrow-down"></i>
+                    <img class="sun-icon" src="styles/assets/sunRaysOutline.png" alt="">
+                </button>
+            </div>
             
         </fieldset>
         <input class="get-pep-talk" type="submit" name="" id="submit" value="pep talk me!">
     </form>
     
-    <div class="results hide">
-        <div class="gif-container">
+    <section class='results-wrapper'>
+        <div class="results hide">
+            <div class="gif-container">
 
+            </div>
         </div>
-    </div>
+    </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
