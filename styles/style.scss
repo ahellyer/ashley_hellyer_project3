@@ -3,19 +3,18 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 62.5%;
 }
-
 
 body {
     color: #333333;
-    font-size: 20px;
+    font-size: 2rem;
     font-family: "Open Sans", sans-serif;
-
-
 }
 
+// ---------------------------header styles -------------------------
+
 header {
-    // background: #17B3BA;
     background: $primary;
     position: relative;
     height: 100vh;
@@ -23,40 +22,37 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
     h2 {
         color: #333333;
         margin:0;
         padding: 0;
         background: none;
         padding-bottom: 50px;
-        
-    }
-    
+    } 
 }
 
 h1 {
     font-family: 'Dosis', sans-serif;
     padding-top: 30px;
-    font-size: 170px;
+    font-size: 15rem;
     margin: 0;
     font-weight: 700;
-    
 }
 
 .header-period {
     color: $secondary;
 }
 
-
+//general h2 styles
 h2 {
     font-family: 'Dosis', sans-serif;
     color: black;
     text-align: center;
     padding-top: 100px;
-    font-size: 60px;
-    background: #FAFAFA;
+    font-size: 5rem;
     margin: 0;
+    background-image: linear-gradient(transparent 85%, $secondary 85%);
+    display: inline-block;
 }
 
 #name {
@@ -66,51 +62,53 @@ h2 {
     color: #333333;
     text-align: center;
     font-family: "Dosis";
-    font-size: 30px;
+    font-size: 4rem;
 }
 
 .button-container {
-    position: relative;
-    display: flex;
-    width: 120px;
-    height: 120px;
-    justify-content: center;
-    align-items: stretch;
-    margin-top: 60px;
-
-}
-
-.sun-icon {
-    position: absolute;
-    top: -35px;
-    bottom: 0;
-    right: 0;
-    left: 0;
-}
+        position: relative;
+        display: flex;
+        width: 120px;
+        height: 120px;
+        justify-content: center;
+        align-items: stretch;
+        margin-top: 30px;
+        background-image: url('assets/sunRaysOutline1.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        align-self: center;
+        }
 
 .user-name {
     display: block;
 }
 
 .user-info {
-    // background: pink;
-    height: 30vh;
+    // height: 30vh;
     border: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-
 }
 
+.fa-arrow-down {
+    text-shadow: 1px 1px 1px 1px grey;
+}
+
+//main arrow button style
 .user-submit {
     background-color: transparent;
     z-index: 10;
     border: none;
-    font-size: 30px;
+    font-size: 3.5rem;
     color: $secondary;
     width: 100%;
+    height: 120px;
 }
+
+//-----------------------user reason section----------------
 
 .input-container {
     display: flex;
@@ -120,53 +118,64 @@ h2 {
     align-items: center;
 }
 
+.user-reason-form {
+    background: url(assets/geometry.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
 .user-reason {
     border: none;
-    background: #FAFAFA;
-    height: 100vh;
+    // background: url(assets/geometry.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
 }
+
+.user-reason .button-container, .user-style .button-container {
+    background-image: url('assets/sunRaysOutlineGrey.png');
+}
+.user-reason .fa-arrow-down, .user-style .fa-arrow-down {
+    color: #333333;
+}
+
+//---------------------------------user style section ------------------------
 
 .user-style-form {
+    background: url(assets/geometry.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     height: 100vh;
-    background: #FAFAFA;
 }
 
+
+
 .user-style {
-    // background: peachpuff;
-    // height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     border: none;
 }
 
+//----------------------------results section--------------------------------
 
-
-.results {
-    color: black;
-    margin: 20px;
-    height: 100vh;
-}
-
-a {
-    font-size: 50px;
-    font-family: 'Dosis', sans-serif;
-    text-decoration: none;
-    display: block;
-    border: #E71753 2px solid;
-    border-radius: 50%;
-    padding: 40px;
-
-}
-
+//general styles for radio buttons and labels
 input[type="radio"]{
   display: none;
 }
 
 input[type="radio"] + label{
-  background-color: $secondary;
+  background-color: $primary;
+  font-size: 2.4rem;
   display: block;
   height: 200px;
   width: 200px;
@@ -178,48 +187,48 @@ input[type="radio"] + label{
   justify-content: center;
   align-items: center;
   margin: 10px;
-
 }
 
 input[type="radio"]:checked + label{
-  background-color: $primary;
-  color: white;
+  background-color: $secondary;
   transition: background-color, color .2s;
 }
 
-.accent-color {
-    color: $primary;
+.results-wrapper {
+    background: url(assets/geometry.png);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #909;
+.results-buttons {
+    padding-top: 80px;
+    padding-bottom: 10px;
 }
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #909;
-   opacity:  1;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #909;
-   opacity:  1;
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
-   color:    #909;
-}
-
-::placeholder { /* Most modern browsers support this now. */
-   color:    #909;
-}
-
 
 .results {
     display: block;
     width: 70%;
     margin: 0 auto;
-    border: $primary 4px solid;
-    border-radius: 5%;
-    margin: 20px;
-   
+    border: $secondary 2px solid;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    background: #FAFAFA;
+    padding: 100px 20px 0 20px;
+    box-shadow: 5px 10px #333333;
+}
+
+.pep-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 .get-pep-talk {
@@ -229,29 +238,52 @@ input[type="radio"]:checked + label{
     background: none;
 }
 
-.results {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background: $secondary;
+.pep-paragraph {
+    width: 50%;
+    padding: 10px;
 }
 
-.pep-paragraph {
-    width: 60%;
-    margin: 0 auto;
+.pep-paragraph p:nth-child(1) {
+    font-weight: bold;
+   
 }
 
 .new-choice {
     display: block;
     flex: 1 0 100%;
+    width: 60%;
+    margin: 0 auto;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.reset-page {
+    border: none;
+    background: #FAFAFA;
+    background-image: url(assets/start-over.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 5%;
+    padding: 0 50px;
+     font-family: 'Dosis', sans-serif;
+    // background-position: 
+}
+
+.save-button {
+    border: none;
+    background: #FAFAFA;
+    background-image: url(assets/download-arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 5%;
+    padding: 0 50px;
+     font-family: 'Dosis', sans-serif;
 }
 
 .gif-container {
-    width: 60%;
-    margin: 0 auto;
+    width: 50%;
+    // margin: 0 auto;
 }
 
 img {
@@ -263,13 +295,28 @@ img {
 }
 
 .show {
-    display: block;
+    display: flex;
 }
 
-.sun-rays {
-    position: absolute;
-    height: 500px;
-    width: 400px;
+h3 {
+    background-image: linear-gradient(transparent 60%, $secondary 60%);
+    display: inline-block;
+    font-family: 'Dosis', sans-serif;
 }
 
+// .results-wrapper {
+//     background-color:$secondary;
+//     background-image: 
+//     radial-gradient(circle at 100% 150%, $secondary 24%, white 25%, white 28%, $secondary 29%, $secondary 36%, white 36%, white 40%, transparent 40%, transparent),
+//     radial-gradient(circle at 0    150%, $secondary 24%, white 25%, white 28%, $secondary 29%, $secondary 36%, white 36%, white 40%, transparent 40%, transparent),
+//     radial-gradient(circle at 50%  100%, white 10%, $secondary 11%, $secondary 23%, white 24%, white 30%, $secondary 31%, $secondary 43%, white 44%, white 50%, $secondary 51%, $secondary 63%, white 64%, white 71%, transparent 71%, transparent),
+//     radial-gradient(circle at 100% 50%, white 5%, $secondary 6%, $secondary 15%, white 16%, white 20%, $secondary 21%, $secondary 30%, white 31%, white 35%, $secondary 36%, $secondary 45%, white 46%, white 49%, transparent 50%, transparent),
+//     radial-gradient(circle at 0    50%, white 5%, $secondary 6%, $secondary 15%, white 16%, white 20%, $secondary 21%, $secondary 30%, white 31%, white 35%, $secondary 36%, $secondary 45%, white 46%, white 49%, transparent 50%, transparent);
+//     background-size:100px 50px;
+//     height: 100vh;
+// }
 
+
+
+
+// Refresh by throwaway icons from the Noun Project 
