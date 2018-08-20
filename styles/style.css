@@ -284,7 +284,8 @@ h2 {
   align-items: center; }
 
 .user-reason-form {
-  background: url("styles/assets/geometry.jpg");
+  background: url("assets/geometry.jpg");
+  background: #FAFAFA;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
