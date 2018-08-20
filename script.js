@@ -6,7 +6,7 @@ pepApp.lastSentence = {
         gif: `src='styles/assets/toughLove.gif' alt="a man shaking another man by the shoulders"`
     },
     tryYourBest: {
-        gif: `src='styles/assets/kandace.gif' alt="a young woman giving herself a high five"`
+        gif: `src='styles/assets/kandace.GIF' alt="a young woman giving herself a high five"`
     },
     oprah: {
         gif: `src='styles/assets/oprah.gif' alt="oprah cheering with both her hands in the air"`
