@@ -73,7 +73,7 @@ h2 {
     justify-content: center;
     align-items: stretch;
     margin-top: 30px;
-    background-image: url('assets/sunRaysOutline1.png');
+    background-image: url('assets/sunRaysOutline1.jpg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -124,7 +124,7 @@ h2 {
 }
 
 .user-reason-form {
-    background: url(assets/geometry.png);
+    background: url('assets/geometry.png');
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -141,7 +141,7 @@ h2 {
 }
 
 .user-reason .button-container, .user-style .button-container {
-    background-image: url('assets/sunRaysOutlineGrey.png');
+    background-image: url('assets/sunRaysOutlineGrey.jpg');
 }
 .user-reason .fa-arrow-down, .user-style .fa-arrow-down {
     color: #333333;
@@ -196,7 +196,7 @@ input[type="radio"]:checked + label{
 //----------------------------results section--------------------------------
 
 .results-wrapper {
-    background: url(assets/geometry.png);
+    background: url('assets/geometry.png');
     display: flex;
     min-height: 100vh;
     justify-content: center;
@@ -262,7 +262,7 @@ input[type="radio"]:checked + label{
 .reset-page, .save-button {
     border: none;
     background: #FAFAFA;
-    background-image: url(assets/start-over.png);
+    background-image: url('assets/start-over.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: 5%;
@@ -273,7 +273,7 @@ input[type="radio"]:checked + label{
 .save-button {
     border: none;
     background: #FAFAFA;
-    background-image: url(assets/download-arrow.png);
+    background-image: url('assets/download-arrow.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: 5%;
