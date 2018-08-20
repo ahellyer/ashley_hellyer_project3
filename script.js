@@ -3,58 +3,13 @@ const pepApp = {};
 
 pepApp.lastSentence = {
     toughLove: {
-        nervous: [
-            'Just go do the damn thing and stop wasting time'
-        ],
-        mistake: [
-            'Now pick yourself up and move on'
-        ],
-        stupid: [
-            'Maybe you are stupid!'
-        ],
-        imposter: [
-            'Stop being a whiny baby and work hard'
-        ],
-        comparing: [
-            'Stop wasting so much time focussing on others!'
-        ],
-        gif: `src='styles/assets/toughLove.gif'`
+        gif: `src='styles/assets/toughLove.gif' alt="a man shaking another man by the shoulders"`
     },
     tryYourBest: {
-        nervous: [
-            'Now get out there and be awesome!'
-        ],
-        mistake: [
-            'Keep your head up, tomorrow is a new day!'
-        ],
-        stupid: [
-            'Now take a walk and recharge your energy!'
-        ],
-        imposter: [
-            'You got this!'
-        ],
-        comparing: [
-            'Now get out there and try your best!'
-        ],
-        gif: `src='styles/assets/tryYourBest.gif'`
+        gif: `src='styles/assets/tryYourBest.gif' alt="a young woman giving herself a high five"`
     },
     oprah: {
-        nervous: [
-            'final sentence oprah'
-        ],
-        mistake: [
-            'final sentence oprah'
-        ],
-        stupid: [
-            'final sentence oprah'
-        ],
-        imposter: [
-            'final sentence oprah'
-        ],
-        comparing: [
-            'final sentence oprah'
-        ],
-        gif: `src='styles/assets/oprah.gif'`
+        gif: `src='styles/assets/oprah.gif' alt="oprah cheering with both her hands in the air"`
     }
 }
 
@@ -122,7 +77,7 @@ pepApp.pepTalks = {
         ],
             
         mistake: [
-            'If plan A didn\t work, the alphabet has 25 more letters! ',
+            'If plan A didn\'t work, the alphabet has 25 more letters! ',
             'When something goes wrong in your life just yell "plot twist" and move on! ',
             'Failure is the condiment that gives success it\'s flavour! ',
             'Life is a shipwreck but we must not forget to sing in the lifeboats! ',
@@ -228,7 +183,7 @@ pepApp.firstSentence = {
             return `What even is imposter syndrome - you are just like every other millenial, ${name}. `
         },
         comparing: (name) => {
-            return `Why do you even care what anyone else is doing, ${name}? it\'s such a waste of time! `
+            return `Why do you even care what anyone else is doing, ${name}? It\'s such a waste of time! `
         }
     },
     tryYourBest: {
@@ -271,25 +226,18 @@ pepApp.firstSentence = {
 pepApp.getRandom = (array, finalArray) => {
         let n = Math.floor(Math.random() * (array.length - 1));
         finalArray.push(array.splice(n, 1));
-    
 }
 
 pepApp.getTalk = () => {
-    // listen for submit of form
-    // $('.user-name').on('submit', function (e) {
-    //     e.preventDefault();
+    // listen for submit of user name form
     $('.user-name-submit').on('click submit', function (e) {
         e.preventDefault();
-        console.log('name saved');
-       
-        //save user info:
+        
+        //save user info, toggle classes to show first question
         pepApp.userName = $('#name').val();
-        $('.why-pep-talk').html(`Why do you need a pep talk ${pepApp.userName}<span class="accent-color">?</span>`)
+        $('.why-pep-talk').html(`Why do you need a pep talk ${pepApp.userName}<span class="accent-color">?</span>`);
+        $('header').toggleClass("show hide");
         $('.user-reason-form').toggleClass('hide show');
-        $('html, body').animate({
-            scrollTop: $(".user-reason-form").offset().top
-        }, 2000);
-        return false;
     });
 
     //listen for submit of pep talk style
@@ -301,8 +249,6 @@ pepApp.getTalk = () => {
         $('.user-reason-form').toggleClass("show hide");
         //toggle next question to show
         $('.user-style-form').toggleClass('hide show')
-        //error handling for wrong answer?
-
     });
 
     $('.user-style-submit').on('click', function (e) {
@@ -310,7 +256,6 @@ pepApp.getTalk = () => {
         console.log('user style submitted');
         //save user style
         pepApp.userStyle = $('input[name=style]:checked').val();
-        
         //generate array of choices
         const allOptions = pepApp.pepTalks[pepApp.userStyle][pepApp.userReason];
         //make copy of all options to send to randomize splice function
@@ -334,27 +279,20 @@ pepApp.getTalk = () => {
         const finalVideo = `<img ${pepApp.lastSentence[pepApp.userStyle].gif}>`
 
         
-
         $('.user-style-form').toggleClass('show hide')
-        console.log('user style hidden');
-        // $('.results').toggleClass('hide show');
         $('.pep-paragraph').append(pepParagraph);
-        
         $('.results-wrapper').toggleClass('hide show')
-        console.log('wrapper shown');
-        
-        
         $('.gif-container').append(finalVideo);
         $('.results-buttons').append(pepButtons);
         $('.results').toggleClass("hide show");
 
     });
 
-    //listen for click on new choice
+    //listen for click on new choice - hide results and show user-style-form again
     $('.results').on('click', '.new-choice', function() {
         $('.gif-container, .pep-paragraph, .new-choice').empty();
         console.log('click worked');
-        $('.style-question').html('Reee-do! What style do you want instead?');
+        $('.style-question').html('Reee-do! Pick a style!');
         $('.results-wrapper').toggleClass('show hide')
         $('.results').toggleClass('show hide')
         $('.results-buttons').empty();
@@ -362,7 +300,7 @@ pepApp.getTalk = () => {
 
     });
 
-    //listen for click on reset  button
+    //listen for click on reset  button and refresh the page
     $('.results').on('click', '.reset-page', function() {
         console.log('button was clicked')
         //hard refresh page
@@ -376,8 +314,6 @@ pepApp.getTalk = () => {
         html2canvas($("#widget"), {
             onrendered: function (canvas) {
                 theCanvas = canvas;
-                // document.body.appendChild(canvas);
-
                 canvas.toBlob(function (blob) {
                     saveAs(blob, "PocketPepTalk.png");
                 });
@@ -421,26 +357,6 @@ $(function () {
 
 
 
-
-
-
-
-
-
-
-
-
-//TO DO 
-
-//decide on last sentence
-//set up click event to shuffle
-//add auto scroll feature on click of submit
-//pick color scheme
-
-
-
-//ideas:
-//use css grid for layout
 
 
 

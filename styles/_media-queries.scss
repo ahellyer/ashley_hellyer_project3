@@ -1,0 +1,134 @@
+@media (max-width: 1280px) {
+    .input-container {
+        width: 80%;
+    }
+    .results {
+        width: 90%;
+        margin: 10px;
+    }
+    .user-style {
+        width: 90%;
+    }
+    .user-style .input-container {
+        width: 90%;
+    }
+    
+}
+
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 10rem;
+        padding: 0;
+        
+    }
+    header h2 {
+            font-size: 4rem;
+        }
+    input[type="radio"] + label {
+        width: 70%;
+        height: auto;
+        flex-direction: column;
+        padding: 0;
+        font-size: 2rem;
+        margin: 5px;
+        border-radius: 5px;
+    }
+    .user-style input[type="radio"] + label {
+        padding: 20px 0;
+    }
+    .why-pep-talk {
+        padding-top: inherit;
+    }
+    .pep-container {
+        flex-direction:column;
+    }
+    .pep-paragraph {
+        width: 90%;
+        padding: 0;
+    }
+    .results-buttons {
+        padding-top: 25px;
+    }
+     .gif-container {
+        padding-top: 10px;
+    }
+    .results {
+        padding: 5px 20px 0 20px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 8rem;
+    }
+    header h2 {
+            font-size: 3rem;
+        }
+    input[type="radio"] + label {
+        width: 90%;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+     .pep-paragraph {
+        padding: 0;
+    }
+   
+    
+
+}
+
+@media (max-width: 600px) {
+    h1 {
+        text-align: center;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    input[type="radio"] + label {
+        width: 100%;
+    }
+    .new-choice {
+        padding: 0;
+    }
+
+    .gif-container {
+        width: 100%;
+    }
+   
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 6rem;
+        padding-top: 40px;
+    }
+    header {
+        justify-content: flex-start;
+        h2 {
+            font-size: 2rem;
+            padding-top: 40px;
+        }
+    }
+    #name {
+        width: 80%;
+    }
+    h2 {
+        font-size: 3rem;
+        background: none;
+    }
+    .input-container {
+        width: 90%;
+    }
+    .pep-paragraph {
+        font-size: 1.8rem;
+    }
+    .pep-container {
+        padding: 0;
+    }
+
+}
+
