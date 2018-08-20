@@ -321,7 +321,7 @@ h2 {
   color: #333333; }
 
 .user-style-form {
-  background: url(assets/geometry.png);
+  background: url(assets/geometry.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -465,7 +465,7 @@ input[type="radio"]:checked + label {
 .reset-page, .save-button {
   border: none;
   background: #FAFAFA;
-  background-image: url("assets/start-over.png");
+  background-image: url("assets/start-over.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: 5%;
@@ -475,7 +475,7 @@ input[type="radio"]:checked + label {
 .save-button {
   border: none;
   background: #FAFAFA;
-  background-image: url("assets/download-arrow.png");
+  background-image: url("assets/download-arrow.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: 5%;

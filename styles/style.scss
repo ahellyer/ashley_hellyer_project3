@@ -125,7 +125,6 @@ h2 {
 
 .user-reason-form {
     background: url('assets/geometry.jpg');
-    // background: #FAFAFA;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -151,7 +150,7 @@ h2 {
 //---------------------------------user style section ------------------------
 
 .user-style-form {
-    background: url(assets/geometry.png);
+    background: url(assets/geometry.jpg);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -263,7 +262,7 @@ input[type="radio"]:checked + label{
 .reset-page, .save-button {
     border: none;
     background: #FAFAFA;
-    background-image: url('assets/start-over.png');
+    background-image: url('assets/start-over.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: 5%;
@@ -274,7 +273,7 @@ input[type="radio"]:checked + label{
 .save-button {
     border: none;
     background: #FAFAFA;
-    background-image: url('assets/download-arrow.png');
+    background-image: url('assets/download-arrow.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: 5%;
