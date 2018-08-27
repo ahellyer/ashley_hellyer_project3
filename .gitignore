@@ -1,6 +1,3 @@
-.DS_Store
-*.pdf
-*.zip
-*.png
-*.txt
-*.psd
+node_modules
+public/styles/styles.css
+public/scripts/main.js

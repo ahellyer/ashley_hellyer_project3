@@ -63,16 +63,17 @@ h2 {
     text-align: center;
     font-family: "Dosis";
     font-size: 4rem;
+    width: 100%;
 }
 
 .button-container {
     position: relative;
-    display: flex;
+    // display: flex;
     width: 120px;
     height: 120px;
-    justify-content: center;
-    align-items: stretch;
-    margin-top: 30px;
+    // justify-content: center;
+    // align-items: stretch;
+    margin: 30px auto;
     background-image: url('assets/sunRaysOutline1.jpg');
     background-size: contain;
     background-position: center;

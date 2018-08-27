@@ -1,0 +1,245 @@
+Pep Talk App: 
+
+Three questions: 
+    1. name (text input)
+    2. why pep talk needed (radio button)
+        - imposter syndrome
+	    - nervous about something
+	    - feeling stupid
+	    - comparing myself to others 
+	    - made a mistake 
+    3. style of pep talk (radio button)
+        - tough love
+        - kandace o brien 
+        - oprah
+
+Display results. Options for results:
+one sentence addressing the person by name
+one of: 
+    - shorter chunk (a few sentences) that always go together
+    - discrete sentences and x number of sentences are added randomly
+
+
+Other ideas: 
+
+-toggle back and forth between options?
+-change background color and text of pep talk?
+-download/set as wallpaper?
+-option to email to yourself at a later date?
+-option to email peptalk to someone else? 
+
+
+
+STUPID:
+- if you're not willing to look stupid, nothing great is ever going to happen to you
+
+style 
+    - 5 categories
+
+
+
+
+
+
+tough love quotes:
+“Let me tell you something you already know. The world ain’t all sunshine and rainbows. It’s a very mean and nasty place and I don’t care how tough you are, it will beat you to your knees and keep you there permanently if you let it. You, me, or nobody is gonna hit as hard as life. But it ain’t about how hard ya hit. It’s about how hard you can get it and keep moving forward. How much you can take and keep moving forward. That’s how winning is done!” - Rocky
+
+“All the world will be your enemy, Prince of a thousand enemies. And when they catch you, they will kill you. But first they must catch you; digger, listener, runner, Prince with the swift warning. Be cunning, and full of tricks, and your people will never be destroyed.” - Watership Down
+
+'Do. Or not do. There is no try.' - Yoda
+
+“I guess it comes down to a simple choice, really. Get busy living or get busy dying.” - Shawshank Redemption"
+
+“In either game, life or football, the margin for error is so small. The inches we need are everywhere around us. On this team, we fight for that inch. On this team, we tear ourselves, and everyone around us to pieces for that inch. We claw with our finger nails for that inch. Cause we know when we add up all those inches that’s going to make the f**king difference between winning and losing, between living and dying.” - Any Given Sunday
+
+“We are food for worms, lads. Believe it or not, each and every one of us in this room is one day gonna stop breathing, turn cold, and die.” “Carpe Diem. Seize the day boys. Make your lives extraordinary.” - Dead Poets Society
+
+
+“Snap out of this. Stop being defined by what other people think of you… or how they disappoint you. It’s lonely at the top — you know that. What’s that song about overcoming professional and personal disappointments? Oh yeah. 'When you’re smiling, when you’re smiling, the whole world smiles with you…'” - Glee
+
+"Calling somebody else fat won't make you any skinner, calling someone else stupid won't make you any smarter. All you can do in life is to try and solve the problem that's in front of you"
+
+"the harder you fall the higher you bounce"
+
+"stop waiting for things to happen and go out and make them happen"
+
+winners are not people who never fail but people who never questions
+
+don't run away from challenges, run over them
+
+don't stop when you are tired, stop when you are done
+
+some people want it to happen, some wish it would happen, others make it happen
+
+i'm not telling you it's going to be easy, I'm telling you it's going to be worth it 
+
+don't blame people for disappointing you. blame yourself for expecting too much 
+
+hard work beats talent when talent doesn't work hard
+
+winners train, losers complain
+
+if you want to be the best you have to do things that other people aren't willing to do
+
+if your dreams don't scare you they aren't big enough 
+
+you will never know your limits unless you push yourself to them
+
+it never gets easier, you just get getter
+
+nobody said it would be easy
+
+the moment you give up is the moment you let someone else win 
+
+right now someone is out there trying to take your spot. they're hungry for it, are you?
+
+look in the mirror- that's your competition
+
+if it doesn't challenge you it doesn't change you
+
+do it for the people who want to see you fail
+
+to give anything less than you best is to sacrifice your gift 
+
+if it was easy everyone would do it 
+
+it's going to be hard but hard is not impossible
+
+-----------------------------------------------
+oprah quotes 
+“Turn your wounds into wisdom.” 
+“You can have it all. Just not all at once.”
+
+“Be thankful for what you have; you'll end up having more. If you concentrate on what you don't have, you will never, ever have enough”
+
+“The biggest adventure you can ever take is to live the life of your dreams.” 
+
+“Real integrity is doing the right thing, knowing that nobody’s going to know whether you did it or not.”
+
+“I've come to believe that each of us has a personal calling that's as unique as a fingerprint - and that the best way to succeed is to discover what you love and then find a way to offer it to others in the form of service, working hard, and also allowing the energy of the universe to lead you. ”
+
+
+“I trust that everything happens for a reason, even if we are not wise enough to see it.” 
+― Oprah Winfrey
+
+
+“Breathe. Let go. And remind yourself that this very moment is the only one you know you have for sure. ”
+
+“You get in life what you have the courage to ask for.”
+
+“Every day brings a chance for you to draw in a breath, kick off your shoes, and dance.”
+
+“One if the hardest things in life to learn are which bridges to cross and which bridges to burn.”
+“You don't become what you want, you become what you believe.”
+“You get to know who you really are in a crisis.” 
+“Your true passion should feel like breathing; it’s that natural.” 
+“I believe that every single event in life happens in an opportunity to choose love over fear.”
+“When you undervalue what you do, the world will undervalue who you are.”
+“Forgiveness is giving up the hope that the past could have been any different.”
+“Think like a queen. A queen if not afraid to fail. Failure is another stepping stone to greatness.”
+“We can't become what we need to be by remaining what we are.”
+“Self-esteem comes from being able to define the world in your own terms and refusing to abide by the judgments of others.” 
+“You are responsible for your life. You can't keep blaming somebody else for your dysfunction. Life is really about moving on.”
+“Doing the best at this moment puts you in the best place for the mext moment”
+“You have to find what sparks a light in you so that you in your own way can illuminate the world.”
+“Every day brings a chance to live free of regret and with as much joy, fun, and laughter as you can stand.”
+
+“Do the one thing you think you cannot do. Fail at it. Try again. Do better the second time. The only people who never tumble are those who never mount the high wire.” 
+
+“The whole point of being alive is to evolve into the complete person you were intended to be.” 
+
+
+
+NERVOUS:
+- you get in life what you have the courage to ask for
+- this is your moment. own it
+- “Breathe. Let go. And remind yourself that this very moment is the only one you know you have for sure. ”
+“Think like a queen. A queen if not afraid to fail. Failure is another stepping stone to greatness.”
+“Do the one thing you think you cannot do. Fail at it. Try again. Do better the second time. The only people who never tumble are those who never mount the high wire.” 
+“Doing the best at this moment puts you in the best place for the mext moment”
+
+
+MISTAKES:
+- you are responsible for your life. You can't keep blaming somebody else for your dysfunction. Life really is about moving on.
+- learn from every mistake bc every experience, particularly your mistakes, are there to teach you and force you into being more of who you are
+- move forward. You have to give back.
+- failure is a great teacher and if you are open to it, every mistake has a lesson to offer
+- failure is another stepping stone to greatness
+- real integrity is going the right thing, knowing that nobody's going to know whether you did it or not
+- whatever has happened to you in your past has no power over ths present moment because life is now.
+- every stumble is not a fall and every fall does not mean failure
+- “Whenever I’m faced with a difficult decision, I ask myself: What would I do if I weren’t afraid of making a mistake, feeling rejected, looking foolish, or being alone? I know for sure that when you remove the fear, the answer you’ve been searching for comes into focus
+
+FEELING stupid
+- where there is no struggle there is no strength
+- do the one thing you think you cannot do. fail at it. try again. do better the second time. The only people who never tumble are those who never mount the high wire. this is your moment. own it.
+- Go ahead, fall down. The world looks different from the ground
+- every stumble is not a fall and every fall does not mean failure
+- you alone are enough
+- there is no such thing as failure. failure is just life trying to move us in another direction
+
+IMPOSTER 
+- the greatest discovery of all time is that a person can change his future by merely changin his attitude
+- “You get in life what you have the courage to ask for.”
+“The whole point of being alive is to evolve into the complete person you were intended to be.” 
+“You don't become what you want, you become what you believe.”
+“When you undervalue what you do, the world will undervalue who you are.”
+“Think like a queen. A queen if not afraid to fail. Failure is another stepping stone to greatness.”
+“Self-esteem comes from being able to define the world in your own terms and refusing to abide by the judgments of others.” 
+
+
+COMPARING
+“Be thankful for what you have; you'll end up having more. If you concentrate on what you don't have, you will never, ever have enough”
+“Self-esteem comes from being able to define the world in your own terms and refusing to abide by the judgments of others.” 
+- getting sucked into other people's ego,  dysfunction and darkness robs you of your own life
+Why compare yourself with others? No one in the entire world can do a better job of being you than you.
+be thankful for what you have, you'll end up having more. If you concentrate on what you don't have, you will never, ever have enough.
+"Stop comparing yourself to other people. You're only on this planet to be you." 
+
+
+
+----------------------------------------------
+NERVOUS
+- a diamond is merely a lump of coal that did well under pressure
+- if you can dream it you can do it- 
+- believe you can and you're halfway there
+- repeat after me "I can do this"
+- if plan A didn't work, the alphabet has 25 more letters
+- start where you are, use what you have, do what you can
+- if you try your best there is no failure
+- don't be afraid to fail, be afraid not to try 
+- don't try to be perfect, just do your biggest
+
+MISTAKES
+- if plan A didn't work, the alphabet has 25 more letters
+- when something goes wrong in your life just yell "plot twist" and move on!
+- failure is the condiment that gives success it's flavour
+- life is a shipwreck but we must not forget to sing in the lifeboats
+- when life shuts a door, open it again. It's a door, that's how they work!
+- you can't make everyone happy you are not a pizza
+
+FEELING stupid
+- never let anyone treat you like a yellow startburst. You are a pink starburst.
+- you are a magical unicorn 
+- you never fail until you stop trying
+
+IMPOSTER
+- cupcakes are muffins that believed in miracles
+- if you were able to believe in santa claus for like 8 years, you can believe in yourself for like 5 minutes
+- you don't have to be great to start, but you have to start to be great
+- just believe in yourself. even if you dn't, pretend that you do and at some point, you will
+- it's not who you are that holds you back, it's who you think you're not
+- instead of 'why me', think 'why not me'!
+
+
+
+COMPARING
+- we struggle with insecurity becuase we compare our behind-the-scenes with everyone else's highlight reel
+- don't compare yourself to others.There's no comparison between the sun and the moon, they shine when it's their time
+- prove yourself to yourself, not others
+- you can't actually be behind in life, there's no such thing! You're just doing your thing and they're just doing theirs!
+- the only person you should compare yourself with is the person you used to be
+- a flower does not think of competing to the flower next to it. It just blooms
+- normal is an illusion! What is normal for the spider is chaos for the fly!
+- the fastest way to kill somethig special is to compare it to something else
+- don't compare your chapter 1 to someone else's chapter 20
