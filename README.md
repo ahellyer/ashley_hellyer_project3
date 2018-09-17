@@ -1,0 +1,2 @@
+# ashley_hellyer_project3
+This solo jQuery project is a dynamic quiz that provides users with a customized pep talk, including their name, their chosen reason, and their chosen style. The content of each pep talk is a randomized subset of a larger array so you will never get the same talk twice. In addition, using FileSaver.js and html2canvas plugins, users can download their pep talk as a png file. 
